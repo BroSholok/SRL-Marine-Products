@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+	<div class="container">
+		<div class="page-header">
+		  <h1>Products</h1>
+		</div>
+		<a href="images/fish" data-lightbox="fish"><img src="{{ url_for('static', filename='images/fish.JPG') }}" alt="Fishes" width="105" height="80"></a>
+		<a href="images/shrimp.jpg" data-lightbox="shrimp"><img src="{{ url_for('static', filename='images/shrimp.jpg') }}" alt="Shrimps" width="105" height="80"></a>
+	</div>
+{% endblock %}
