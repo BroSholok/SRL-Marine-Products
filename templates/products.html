@@ -2,10 +2,44 @@
  
 {% block content %}
 	<div class="container">
-		<div class="page-header">
-		  <h1>Products</h1>
+	  <h2>Products</h2>            
+	  <div class="row">
+		<div class="col-md-4">
+		  <a href="../static/images/fish.JPG" class="thumbnail">
+			<p>Fish</p>    
+			<img src="../static/images/fish.JPG" alt="Fish" style="width:150px;height:150px">
+		  </a>
 		</div>
-		<a href="images/fish" data-lightbox="fish"><img src="{{ url_for('static', filename='images/fish.JPG') }}" alt="Fishes" width="105" height="80"></a>
-		<a href="images/shrimp.jpg" data-lightbox="shrimp"><img src="{{ url_for('static', filename='images/shrimp.jpg') }}" alt="Shrimps" width="105" height="80"></a>
+		<div class="col-md-4">
+		  <a href="../static/images/shrimp.jpg" class="thumbnail">
+			<p>Shrimp</p>
+			<img src="../static/images/shrimp.jpg" alt="Shrimp" style="width:150px;height:150px">
+		  </a>
+		</div>
+		<div class="col-md-4">
+		  <a href="http://placekitten.com/g/150/150" class="thumbnail">
+			<p>Kitty</p>
+			<img src="http://placekitten.com/g/150/150" alt="Kitty" style="width:150px;height:150px">
+		  </a>
+		</div>
+		<div class="col-md-4">
+		  <a href="http://lorempixel.com/150/150" class="thumbnail">
+			<p>LoremPixum #1</p>
+			<img src="http://lorempixel.com/150/150" alt="LoremPixum" style="width:150px;height:150px">
+		  </a>
+		</div>
+		<div class="col-md-4">
+		  <a href="http://lorempixel.com/150/150" class="thumbnail">
+			<p>LoremPixum #2</p>
+			<img src="http://lorempixel.com/150/150" alt="LoremPixum" style="width:150px;height:150px">
+		  </a>
+		</div>
+		<div class="col-md-4">
+		  <a href="http://lorempixel.com/150/150" class="thumbnail">
+			<p>LoremPixum #3</p>
+			<img src="http://lorempixel.com/150/150" alt="LoremPixum" style="width:150px;height:150px">
+		  </a>
+		</div>
+	  </div>
 	</div>
 {% endblock %}
