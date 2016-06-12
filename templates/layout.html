@@ -12,13 +12,9 @@
 	
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	
-	<!-- lightbox CSS -->
-	<link href="{{ url_for('static', filename='css/lightbox.min.css') }}" rel="stylesheet">
 	
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,15 +34,16 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-		  <a class="navbar-brand" href="#"><img alt="Brand" src="{{ url_for('static', filename='images/srl-logo.png') }}"></a>
+		  <a class="navbar-brand" href="{{ url_for('home') }}">SRL Marine Products</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-			<li><a href="{{ url_for('home') }}">Home</a></li>
-			<li><a href="{{ url_for('about') }}">About</a></li>
+		  	<li><a href="{{ url_for('home') }}">Home</a></li>
+	        <li><a href="{{ url_for('about') }}">About</a></li>
 			<li><a href="{{ url_for('products') }}">Products</a></li>
+	        <li><a href="{{ url_for('processing') }}">Processing</a></li>
 			<li><a href="{{ url_for('contact') }}">Contact</a></li>
 		  </ul>
 		  </div>
@@ -62,8 +59,8 @@
       		<div class="col-sm-4">
 		        <p class="text-muted">&copy SRL Marine Products</p>
       		</div>
-      		<div class="col-sm-6" style="float: right;">
-		        <p class="text-muted">Created by Syed <a href="https://brosholok.github.io">Subeh-Sadik Sholok</a></p>
+      		<div class="col-sm-4" style="float: right;">
+		        <p class="text-muted">Created by <a href="https://brosholok.github.io">Syed Subeh-Sadik Sholok</a></p>
       		</div>
       	</div>
       </div>

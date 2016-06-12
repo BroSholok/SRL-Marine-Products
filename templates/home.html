@@ -1,15 +1,6 @@
 {% extends "layout.html" %}
 
-{% block content %}
-	<style>
-		#welcome_vid {
-			padding-top: 24px;
-		}
-		#welcome_container {
-			padding-top: 50px;
-		}
-	</style>
-	
+{% block content %}	
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
@@ -46,19 +37,23 @@
 	
 	<div id="welcome_container" class="container">
 		<div class="row">
-		  <div id="welcome_vid" class="col-sm-6">
+		  <div class="col-sm-6">
 			<div class="embed-responsive embed-responsive-16by9">
-			  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1W1rV1iuDaE"></iframe>
+			  <iframe id="welcome_vid" class="embed-responsive-item" src="https://www.youtube.com/embed/1W1rV1iuDaE"></iframe>
 			</div>
 		  </div>
 		  
-		  <div id="welcome" class="col-sm-6">
-			<h2>Welcome...</h2>
-			<p>Sea Resources Marine Products Ltd is a sister company of Sea Resources Group under
-			the umbrella of Rangs Family. Rangs family has 52 companies where sea resources group
-			consisting 13 companies. Sea Resources Group consist largest industrial fishing fleet 
-			in Bangladesh. There are 19 fishing trawlers under five companies. Among them, 11 are
-			mid water fin fish trawlers and 8 are shrimp trawlers.</p>
+		  <div id="news" class="col-sm-6">
+			<h2>News</h2>
+			<article>
+				<h3>Lochness monster found!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
 		  </div>
 		</div>
 	</div>

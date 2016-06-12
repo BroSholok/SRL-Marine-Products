@@ -28,6 +28,18 @@ form input#email {
   width: 50%;
 }
 form textarea#message {
-  width: 65%;
-  height: 300px;
+  width: 70%;
+  height: 100px;
+}
+
+
+/* home */
+#welcome_vid {
+  height: 250px;
+}
+#welcome_container {
+  margin-top: 50px;
+}
+#news h2, h3 {
+  margin-top: 0;
 }

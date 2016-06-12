@@ -29,6 +29,10 @@ def about():
 def products():
   return render_template('products.html') 
 
+@app.route('/processing')
+def processing():
+  return render_template('processing.html')
+
 @app.route('/contact', methods=('GET', 'POST'))
 def contact():
     form = ContactForm()
